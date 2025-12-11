@@ -1,0 +1,7 @@
+{
+  "name": "Eduno CRM",
+  "description": "An enterprise-grade, hierarchical student attendance monitoring system with location tagging, audit logs, and AI-driven insights.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
