@@ -21,5 +21,16 @@ export default defineConfig({
     // VITE_* variables are automatically replaced during build
     outDir: 'dist',
     sourcemap: false,
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom'],
+          'ui-vendor': ['lucide-react', 'recharts'],
+          'ai-vendor': ['@google/genai'],
+          'db-vendor': ['@supabase/supabase-js'],
+        },
+      },
+    },
   }
 });
